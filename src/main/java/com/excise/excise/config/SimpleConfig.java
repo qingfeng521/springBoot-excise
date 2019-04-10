@@ -9,8 +9,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
-@Configuration
-@ComponentScan(basePackages = "com.excise.excise.entity")
+//@Configuration
+//@ComponentScan(basePackages = "com.excise.excise.entity")
 public class SimpleConfig {
 
     @Autowired

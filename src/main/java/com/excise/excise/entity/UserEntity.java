@@ -1,15 +1,36 @@
 package com.excise.excise.entity;
 
-import org.springframework.stereotype.Component;
+import org.apache.ibatis.type.Alias;
+import org.springframework.web.multipart.MultipartFile;
 
-import java.util.Date;
+import javax.swing.plaf.multi.MultiToolTipUI;
 
-@Component
+@Alias("user")
 public class UserEntity {
-
+    private Long id;
     private String name;
-    private Integer age;
-    private Date date;
+    private String phone;
+    private String email;
+    private String aboutme;
+    private String passwd;
+    private String confirmPasswd;
+    private String avatar;
+    private Integer type;
+    private String createTime;
+    private Integer enable;
+    private Long agencyId;
+
+    private MultipartFile avatarFile;
+    private String newPasswd;
+    private String key;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -19,19 +40,107 @@ public class UserEntity {
         this.name = name;
     }
 
-    public Integer getAge() {
-        return age;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public Date getDate() {
-        return date;
+    public String getEmail() {
+        return email;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getAboutme() {
+        return aboutme;
+    }
+
+    public void setAboutme(String aboutme) {
+        this.aboutme = aboutme;
+    }
+
+    public String getPasswd() {
+        return passwd;
+    }
+
+    public void setPasswd(String passwd) {
+        this.passwd = passwd;
+    }
+
+    public String getConfirmPasswd() {
+        return confirmPasswd;
+    }
+
+    public void setConfirmPasswd(String confirmPasswd) {
+        this.confirmPasswd = confirmPasswd;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
+    }
+
+    public Integer getEnable() {
+        return enable;
+    }
+
+    public void setEnable(Integer enable) {
+        this.enable = enable;
+    }
+
+    public Long getAgencyId() {
+        return agencyId;
+    }
+
+    public void setAgencyId(Long agencyId) {
+        this.agencyId = agencyId;
+    }
+
+    public MultipartFile getAvatarFile() {
+        return avatarFile;
+    }
+
+    public void setAvatarFile(MultipartFile avatarFile) {
+        this.avatarFile = avatarFile;
+    }
+
+    public String getNewPasswd() {
+        return newPasswd;
+    }
+
+    public void setNewPasswd(String newPasswd) {
+        this.newPasswd = newPasswd;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.excise.excise.mapper.UserMapper">
+    <select id="queryUsers" resultType="UserEntity">
+        SELECT id FROM USER
+    </select>
+    <select id="getUser" resultType="UserEntity">
+    SELECT
+    ID,
+    NAME,
+    PHONE,
+    EMAIL,
+    ABOUTME,
+    PASSWD,
+    AVATAR,
+    TYPE,
+    CREATE_TIME,
+    ENABLE,
+    AGENCY_ID
+    FROM USER
+    </select>
+</mapper>
